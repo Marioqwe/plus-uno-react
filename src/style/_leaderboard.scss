@@ -1,0 +1,27 @@
+.leaderboard {
+  margin: 16px;
+  width: 320px;
+}
+
+.leaderboard-columns {
+  & > * {
+    width: 80px;
+  }
+}
+
+.leaderboard-column-name {
+  display: inline-block;
+  text-align: center;
+}
+
+.leaderboard-row {
+  & > * {
+    width: 80px;
+  }
+}
+
+.leaderboard-row-item {
+  display: inline-block;
+  height: 30px;
+  text-align: center;
+}

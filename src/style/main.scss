@@ -1,0 +1,46 @@
+@import "fonts";
+@import "utils";
+@import "constants";
+@import "tile";
+@import "tutorial";
+@import "header";
+@import "footer";
+@import "gameboard";
+@import "leaderboard";
+
+body, html {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  min-height: 1000px;
+  justify-content: center;
+}
+
+.main-container {
+  align-self: center;
+  //background-color: red;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: $contentWidth;
+
+  & > * {
+    align-self: center;
+  }
+}
+
+.divider {
+  background: #414a4c;
+  border: 0;
+  clear:both;
+  display:block;
+  height: 1px;
+  width: 96%;
+}

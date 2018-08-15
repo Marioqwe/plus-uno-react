@@ -1,0 +1,84 @@
+.tutorial {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 800px;
+}
+
+.tutorial-center-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tutorial-grid {
+  display: flex;
+}
+
+.skip-tutorial-button {
+  color: lightgray;
+  cursor: pointer;
+  text-align: center;
+}
+
+.speech-bubble-container {
+  height: 300px;
+}
+
+.speech-bubble {
+  background: black;
+  border-radius: .4em;
+  color: white;
+  position: relative;
+  text-align: center;
+  width: 200px;
+}
+
+.speech-bubble-top {
+  @extend .speech-bubble;
+}
+
+.speech-bubble-top:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: black;
+  border-top: 0;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.speech-bubble-bottom {
+  @extend .speech-bubble;
+}
+
+.speech-bubble-bottom:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: black;
+  border-bottom: 0;
+  margin-left: -10px;
+  margin-bottom: -10px;
+}
+
+.top-65 {
+  top: 65%;
+}
+
+.left-50 {
+  left: 50%;
+}
+
+.black-font {
+  color: black;
+}

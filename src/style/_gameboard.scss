@@ -1,0 +1,85 @@
+@import "tile";
+
+.gameboard {
+  //background: blue;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.grid {
+  @include size($gridSideLength);
+
+  align-self: center;
+  //background: purple;
+  display: flex;
+  flex-wrap: wrap;
+  //height: $length;
+  justify-content: center;
+  position: relative;
+  //width: $length;
+}
+
+.message {
+  @include size($gridSideLength);
+
+  align-self: center;
+  background: rgba(157,157,157,0.5);;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+
+  & > * {
+    margin: 32px
+  }
+}
+
+.message-title {
+  align-self: center;
+  font-size: 56px;
+}
+
+.message-button {
+  @include button;
+  align-self: center;
+}
+
+.buttons {
+  align-self: center;
+  //background: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 8px;
+  width: 3 * $tileSideLength;
+}
+
+.undo-button {
+  align-self: center;
+  //background: darksalmon;
+  height: 56px;
+  outline: none;
+  width: 56px;
+}
+
+.stats {
+  align-self: center;
+  //background: green;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 36px;
+  justify-content: space-between;
+  margin-bottom: 42px;
+  width: 3 * $tileSideLength;
+
+  & > * {
+    align-self: center;
+    //background: olive;
+  }
+}

@@ -1,0 +1,12 @@
+.footer {
+  flex-shrink: 0;
+
+  & > * {
+    margin: 8px;
+  }
+}
+
+.footer-text {
+  font-size: 24px;
+  padding: 20px;
+}

@@ -1,0 +1,5 @@
+$contentWidth: 600px;
+$tileSpacing: 6px;
+$tileSideLength: $contentWidth / 3.5 - $tileSpacing * 8;
+$transition-speed: 100ms;
+$gridSideLength: $tileSideLength * 3 + $tileSpacing * 6;
